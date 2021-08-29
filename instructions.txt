@@ -1,0 +1,84 @@
+
+To run the test, run either:
+
+1.python3 final.py<input.txt
+2.python3 final.py<input2.txt
+3.python3 final.py<input3.txt     to get different putcomes.
+
+At the start of the game print the following exactly:
+"You are in a garden outside the tower. There is a large oak door to the East."
+The door starts closed.
+The user can, if the door is closed.
+"open door" in which case prints: "The door opens."
+"look at door", which prints "The door is made of heavy oak, but is unlocked."
+"go east", which prints "The Door is closed".
+Once the door is open, the user can:
+"look at door", which prints "The open door is made of heavy oak"
+"close door", which makes the door closed again and prints "The door closes."
+"go east", which takes them to the Hall.
+
+Hall
+When the user enters the hall, print the following exactly:
+"You enter a long stone hallway, lit by torches. To the North is the armoury. To the East is a room with an instruction manual on a table. To the West is outside the tower. To the South is a staircase."
+The user can:
+"go north", which takes them to the Armoury
+"go east", which takes them to the Instruction Room
+"go west", which takes them to the Start
+“go south” which takes them to the Staircase
+Staircase
+When user goes to staircase, print:
+There is a long winding staircase.
+	“go up”, which takes the user to a new hall
+
+Istruction Room
+When the user enters the Instruction room, print the following exactly:
+"You enter a sparse room with a small wooden table."
+If the user has not yet picked up the intrsuction, also print (with a space between the previous and this):
+"There is a small piece of paper of the tower on the table."
+The user can:
+"go west", which takes them back to the hall.
+If they have not picked up the key:
+"look at map" which prints "The map has the location of the princess."
+"get map" which prints "You picked up the map. You are ready to go."
+
+Armoury
+When the user enters the armoury, print the following exactly:
+"You enter a gruesome space. There is a roaring fire in a fireplace, and a lot of weapons everywhere."
+The user can:
+"look at east" which prints "There is a bow and arrow."
+“get bow” which prints “You picked up a bow. Hope your aim is good.” 
+“drop bow” which prints “You dropped the bow.”
+"look at west" which prints "There is a double edge sword."
+“get sword” which prints “You picked up a sword. It is heavy.” 
+“drop sword” which prints “You dropped the sword.”
+"look at north" which prints "There is a spear."
+“get spear” which prints “You picked up a spear. It is long.” 
+“drop spear” which prints “You dropped the spear
+"go south", which takes them to the hall.
+
+Room Hall 2
+When the user enter the second hall, print the following exactly:
+"You enter a long stone hallway, lit by torches. There is a fire in front of you. To the East there is a monster asleep. To the West there is a another monster at sleep. To the North is the Clue Room."
+The user can:
+"go west" which prints "There is a hairy one-eyed monster. Good news he is sleeping."
+"Enter a command:"
+The user can enter "attack" which prints (after the monster's life is 0) "Monster vanquished!"
+"go east" There is a hairy one-eyed monster. Good news she is sleeping."
+"Enter a command:"
+The user can enter "attack" which prints (after the monster's life is 0) "Monster vanquished!"
+after both monsters have being vanquished, the user can:
+"go north" which prints "You enter a well furnished living space. There is a golden chest at the center.
+The chest is large and made of oak."
+
+Clue room
+When the user enters the clue room the user is then asked 3 questions with answers already set as ('rain', 'age', and 'human' ). if the user misses it prints "Try again." if the user is correct it prints "Correct!"
+when the user gets all 3 questions correct it prints "The way to defeat the monster is to avoid his attacks. The more you avoid the tired he would become."
+"You enter a stuffy dark and gloomy room."
+"There is a gruesome monster with the princess chained behind him."
+
+Top of tower
+When the user gets to the top of the tower, the user can: 
+"attack" which takes 10 from the monsters health.
+"block" which avoids the monsters attack.
+If the user dies it prints "You died 😝" and the game is over.
+If the user defeats the monster it prints "You have rescued the princess! You win." and the game is over.
